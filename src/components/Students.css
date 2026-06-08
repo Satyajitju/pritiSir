@@ -1,0 +1,253 @@
+/* =========================
+   STUDENT PAGE
+========================= */
+
+.student-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+}
+
+.student-tab {
+  border: none;
+  background: #ffffff;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1f2937;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.student-tab:hover {
+  transform: translateY(-2px);
+}
+
+.student-tab.active {
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #3b82f6
+  );
+  color: white;
+  box-shadow: 0 10px 25px rgba(37,99,235,0.35);
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 35px;
+}
+
+/* =========================
+   STUDENT GRID
+========================= */
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(380px, 1fr)
+  );
+  gap: 25px;
+}
+
+/* =========================
+   STUDENT CARD
+========================= */
+
+.student-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid #edf1f7;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+  transition: all 0.3s ease;
+
+  height: 100%;
+}
+
+.student-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.12);
+}
+
+.student-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+
+  margin-bottom: 15px;
+}
+
+.student-detail {
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.student-thesis {
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   YEAR BADGE
+========================= */
+
+.student-year {
+  display: inline-block;
+
+  background: #2563eb;
+  color: white;
+
+  padding: 6px 14px;
+
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  margin-top: 10px;
+}
+
+/* =========================
+   APPLICATION SECTION
+========================= */
+
+.apply-section {
+  margin-top: 80px;
+
+  background: linear-gradient(
+    135deg,
+    #f8fafc,
+    #eef4ff
+  );
+
+  padding: 60px;
+
+  border-radius: 25px;
+
+  text-align: center;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.05);
+}
+
+.apply-section h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+
+  margin-bottom: 20px;
+}
+
+.apply-section p {
+  max-width: 850px;
+
+  margin: auto;
+
+  margin-bottom: 30px;
+
+  color: #4b5563;
+
+  line-height: 1.9;
+}
+
+.apply-section .btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+/* =========================
+   LOADER
+========================= */
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: rgba(255,255,255,0.85);
+
+  z-index: 9999;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+
+  border: 6px solid rgba(37,99,235,0.2);
+  border-top-color: #2563eb;
+
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+}
+
+.loader-text {
+  margin-top: 15px;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-card {
+    padding: 22px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .apply-section {
+    padding: 35px 20px;
+  }
+
+  .apply-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .student-tab {
+    width: 100%;
+  }
+}

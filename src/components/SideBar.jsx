@@ -1,47 +1,124 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import './SideBar.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Sidebar.css";
 
-const navItems = [
-  { label: 'Home', path: '/' },
-  { label: 'Research', path: '/research' },
-  { label: 'Publications', path: '/publications' },
-  { label: 'Projects', path: '/projects' },
-  { label: 'Awards', path: '/courses' },
-  { label: 'Prospective Students', path: '/students' },
-  { label: 'Books Published', path: '/books' }
-];
-
-function SideBar() {
-  const location = useLocation();
-  
+function Sidebar() {
   return (
     <div className="sidebar">
+
       <div className="sidebar-header">
+
         <img
-          src="https://static.wixstatic.com/media/485cee_46bfcf61e1fe4cc78cf03373aaef256a~mv2.gif"
-          alt="Logo"
+          src="/jadavpur university logo.jpg"
+          alt="Jadavpur University"
           className="sidebar-logo"
         />
-        <p className="sidebar-title">Jadavpur University</p>
+
+        <div className="sidebar-title">
+          <div>Prof. Priti Kumar Roy</div>
+          <div>Department of Mathematics</div>
+          <div>Jadavpur University</div>
+        </div>
+
       </div>
 
       <ul className="sidebar-nav">
-        {navItems.map((item) => (
-          <li key={item.path}>
-            <Link
-              to={item.path}
-              className={`sidebar-link ${
-                location.pathname === item.path ? 'active' : ''
-              }`}
-            >
-              {item.label}
-            </Link>
-          </li>
-        ))}
+
+        <li>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "sidebar-link active"
+                : "sidebar-link"
+            }
+          >
+            Home
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/research"
+            className={({ isActive }) =>
+              isActive
+                ? "sidebar-link active"
+                : "sidebar-link"
+            }
+          >
+            Research
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/publications"
+            className={({ isActive }) =>
+              isActive
+                ? "sidebar-link active"
+                : "sidebar-link"
+            }
+          >
+            Publications
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              isActive
+                ? "sidebar-link active"
+                : "sidebar-link"
+            }
+          >
+            Research Projects
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/courses"
+            className={({ isActive }) =>
+              isActive
+                ? "sidebar-link active"
+                : "sidebar-link"
+            }
+          >
+            Awards & Honors
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/students"
+            className={({ isActive }) =>
+              isActive
+                ? "sidebar-link active"
+                : "sidebar-link"
+            }
+          >
+            Students & Fellows
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/books"
+            className={({ isActive }) =>
+              isActive
+                ? "sidebar-link active"
+                : "sidebar-link"
+            }
+          >
+            Books Published
+          </NavLink>
+        </li>
+
       </ul>
+
     </div>
   );
 }
 
-export default SideBar;
+export default Sidebar;
