@@ -104,17 +104,6 @@ export class Publications extends Component {
 </span>
 
 </div>
-<div className="publication-header">
-
-  <h2>
-    Research Publications
-  </h2>
-
-  <p>
-    {publications.length} Publications
-  </p>
-
-</div>
 
 
                     <h4 className="publication-title">
