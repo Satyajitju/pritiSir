@@ -236,10 +236,24 @@ export class Students extends Component {
                     className="student-card"
                     key={idx}
                   >
+                    {student.image && student.image.trim() !== "" && (
+  <img
+    src={student.image}
+    alt={student.Name}
+    className="student-photo"
+    onError={(e) => {
+      e.target.style.display = "none";
+    }}
+  />
+)}
                     <div className="student-name">
                       {student.Name}
                     </div>
-
+                    {student["Research Area"] && (
+  <div className="student-research-area">
+    {student["Research Area"]}
+  </div>
+)}
                     {type !== "post_doc" && (
                       <>
                         <div className="student-detail">
