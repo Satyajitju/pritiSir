@@ -116,6 +116,11 @@ function Sidebar() {
         </li>
 
       </ul>
+      <div className="sidebar-credit">
+  <div>© 2026</div>
+  <div>Website Designed & Developed by</div>
+  <strong>Satyajit Mukherjee</strong>
+</div>
 
     </div>
   );
