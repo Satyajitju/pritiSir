@@ -104,6 +104,100 @@ export class Students extends Component {
   </div>
 
 </section>
+<section className="research-themes-section">
+
+  <div className="container">
+
+    <h2 className="text-center mb-5">
+      Research Themes
+    </h2>
+
+    <div className="research-themes-grid">
+
+      <div className="theme-card">
+        <h4>Infectious Disease Dynamics</h4>
+        <p>
+          Mathematical modelling of HIV/AIDS,
+          Dengue, Chikungunya, Leprosy and
+          Leishmaniasis transmission dynamics.
+        </p>
+      </div>
+
+      <div className="theme-card">
+        <h4>Mathematical Epidemiology</h4>
+        <p>
+          Quantitative approaches to disease
+          surveillance, intervention strategies
+          and public health decision-making.
+        </p>
+      </div>
+
+      <div className="theme-card">
+        <h4>Cancer & Autoimmune Disorders</h4>
+        <p>
+          Modelling of Psoriasis, Cervical Cancer,
+          immune response dynamics and
+          therapeutic interventions.
+        </p>
+      </div>
+
+      <div className="theme-card">
+        <h4>Therapeutic Optimization</h4>
+        <p>
+          Optimal control strategies, drug
+          treatment protocols and mathematical
+          analysis of biomedical therapies.
+        </p>
+      </div>
+
+      <div className="theme-card">
+        <h4>Ecological Systems</h4>
+        <p>
+          Ecological modelling, pest management
+          and sustainable biological resource
+          utilization.
+        </p>
+      </div>
+
+      <div className="theme-card">
+        <h4>Computational Biology</h4>
+        <p>
+          Mathematical and computational
+          approaches for understanding complex
+          biological systems.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section className="research-activity-section">
+
+  <div className="container">
+
+    <h2 className="text-center mb-4">
+      Research Activities & Collaborations
+    </h2>
+
+    <img
+      src="/research-group-lab.jpg"
+      alt="Research Activities"
+      className="activity-image"
+    />
+
+    <p className="activity-caption">
+      Research discussions, collaborative meetings
+      and academic interactions within the
+      Mathematical Biology Research Group.
+    </p>
+
+  </div>
+
+</section>
 
         <div className="container py-5">
 
