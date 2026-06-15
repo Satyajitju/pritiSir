@@ -86,11 +86,51 @@ export class Students extends Component {
 
     </div>
 
-    <img
-      src="/research-group.png"
-      alt="Research Group"
-      className="research-group-image"
-    />
+    <div
+  id="researchCarousel"
+  className="carousel slide"
+  data-bs-ride="carousel"
+>
+
+  <div className="carousel-inner">
+
+    <div className="carousel-item active">
+      <img
+        src="/research-group.png"
+        className="research-group-image d-block w-100"
+        alt="Research Group"
+      />
+    </div>
+
+    <div className="carousel-item">
+      <img
+        src="/research-group-lab.jpg"
+        className="research-group-image d-block w-100"
+        alt="Research Activities"
+      />
+    </div>
+
+  </div>
+
+  <button
+    className="carousel-control-prev"
+    type="button"
+    data-bs-target="#researchCarousel"
+    data-bs-slide="prev"
+  >
+    <span className="carousel-control-prev-icon"></span>
+  </button>
+
+  <button
+    className="carousel-control-next"
+    type="button"
+    data-bs-target="#researchCarousel"
+    data-bs-slide="next"
+  >
+    <span className="carousel-control-next-icon"></span>
+  </button>
+
+</div>
 
     <div className="research-group-description">
 
@@ -104,100 +144,7 @@ export class Students extends Component {
   </div>
 
 </section>
-<section className="research-themes-section">
 
-  <div className="container">
-
-    <h2 className="text-center mb-5">
-      Research Themes
-    </h2>
-
-    <div className="research-themes-grid">
-
-      <div className="theme-card">
-        <h4>Infectious Disease Dynamics</h4>
-        <p>
-          Mathematical modelling of HIV/AIDS,
-          Dengue, Chikungunya, Leprosy and
-          Leishmaniasis transmission dynamics.
-        </p>
-      </div>
-
-      <div className="theme-card">
-        <h4>Mathematical Epidemiology</h4>
-        <p>
-          Quantitative approaches to disease
-          surveillance, intervention strategies
-          and public health decision-making.
-        </p>
-      </div>
-
-      <div className="theme-card">
-        <h4>Cancer & Autoimmune Disorders</h4>
-        <p>
-          Modelling of Psoriasis, Cervical Cancer,
-          immune response dynamics and
-          therapeutic interventions.
-        </p>
-      </div>
-
-      <div className="theme-card">
-        <h4>Therapeutic Optimization</h4>
-        <p>
-          Optimal control strategies, drug
-          treatment protocols and mathematical
-          analysis of biomedical therapies.
-        </p>
-      </div>
-
-      <div className="theme-card">
-        <h4>Ecological Systems</h4>
-        <p>
-          Ecological modelling, pest management
-          and sustainable biological resource
-          utilization.
-        </p>
-      </div>
-
-      <div className="theme-card">
-        <h4>Computational Biology</h4>
-        <p>
-          Mathematical and computational
-          approaches for understanding complex
-          biological systems.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section className="research-activity-section">
-
-  <div className="container">
-
-    <h2 className="text-center mb-4">
-      Research Activities & Collaborations
-    </h2>
-
-    <img
-      src="/research-group-lab.jpg"
-      alt="Research Activities"
-      className="activity-image"
-    />
-
-    <p className="activity-caption">
-      Research discussions, collaborative meetings
-      and academic interactions within the
-      Mathematical Biology Research Group.
-    </p>
-
-  </div>
-
-</section>
 
         <div className="container py-5">
 
