@@ -134,3 +134,43 @@
     font-size: 0.9rem;
   }
 }
+.sidebar-credit {
+  margin-top: auto;
+
+  padding-top: 25px;
+
+  text-align: center;
+
+  font-size: 0.75rem;
+
+  color: rgba(255,255,255,0.55);
+
+  line-height: 1.5;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar-credit strong {
+  display: block;
+
+  margin-top: 4px;
+
+  color: rgba(255,255,255,0.8);
+
+  font-weight: 600;
+}
+.sidebar-credit-link {
+  color: rgba(255,255,255,0.8);
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.sidebar-credit-link:hover {
+  color: #60a5fa;
+
+  text-decoration: underline;
+}

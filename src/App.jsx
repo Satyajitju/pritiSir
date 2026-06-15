@@ -9,6 +9,7 @@ import Courses from './components/Courses';
 import Students from './components/Students';
 import Books from './components/Books';
 
+
 function App() {
   return (
     <div className="d-flex flex-column flex-lg-row flex-md-row">
@@ -25,6 +26,7 @@ function App() {
           <Route path="/students" element={<Students />} />
           <Route path="/books" element={<Books />} />
         </Routes>
+        
       </div>
     </div>
   )

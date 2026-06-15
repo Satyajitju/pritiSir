@@ -116,6 +116,18 @@ function Sidebar() {
         </li>
 
       </ul>
+      <div className="sidebar-credit">
+  <div>© 2026</div>
+  <div>Website Designed & Developed by</div>
+  <a
+  href="https://scholar.google.com/citations?hl=en&user=RXcsKioAAAAJ&view_op=list_works&gmla=ACrTK9UGplbR6kgQtbdAz9Vl0vSx3huYb6iGsCHsklG48IWfuYMVcL9239VQy4MBmd1vnkQncm5JwxCw9Ju9SbDn"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="sidebar-credit-link"
+>
+  Satyajit Mukherjee
+</a>
+</div>
 
     </div>
   );
