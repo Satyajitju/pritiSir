@@ -70,6 +70,40 @@ export class Students extends Component {
     return (
       <div>
         <Heading title="Students & Fellows" />
+        <section className="research-group-section">
+
+  <div className="container">
+
+    <div className="text-center mb-5">
+
+      <h2>
+        Mathematical Biology Research Group
+      </h2>
+
+      <p>
+        Department of Mathematics · Jadavpur University
+      </p>
+
+    </div>
+
+    <img
+      src="/research-group.png"
+      alt="Research Group"
+      className="research-group-image"
+    />
+
+    <div className="research-group-description">
+
+      <p>
+      The Mathematical Biology Research Group, led by Prof. Priti Kumar Roy at Jadavpur University, brings together doctoral researchers, postdoctoral fellows, and collaborators working on infectious disease dynamics, mathematical epidemiology, therapeutic optimization, ecological systems, and computational biology, with a strong focus on addressing real-world biomedical and public health challenges through mathematical modelling.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 
         <div className="container py-5">
 
